@@ -1,0 +1,178 @@
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.home-container .overview, .home-container .general, .home-container .statistics {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.UserCard {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.chart-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.UserCard .wrapper {
+  width: 100%;
+  border-color: rgba(228, 228, 231, 1);
+  border-style: solid;
+  border-width: 0;
+  padding: 1.5rem;
+}
+
+.UserCard .wrapper .container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+
+.user-card-profile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+.user-card-avatar {
+  object-position: center;
+  object-fit: cover;
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.user-card-info {
+  flex: 1 1 0%;
+}
+
+.user-card-info h2 {
+  color: rgba(9, 9, 11, 1);
+  opacity: 1;
+  font-size: 19px;
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Segoe UI';
+}
+
+.user-card-info p {
+  color: rgba(113, 113, 122, 1);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  opacity: 1;
+}
+
+@media (max-width: 456px) {
+  .UserCard .wrapper .container {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .user-card-profile {
+    flex-grow: 1;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .user-card-info {
+    flex: 0;
+  }
+
+  .user-card-logout {
+    width: 100%;
+  }
+
+  .general .button {
+    width: 100%;
+  }
+
+  .general .button.secondary {
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.filter {
+  display: flex;
+  justify-content: end;
+  margin-top: 4.5px;
+}
+
+select {
+  width: 150px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #e4e4e7;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-family: inherit;
+  background-color: transparent;
+  color: #020817;
+  box-sizing: border-box;
+  transition: all 0.15s;
+  margin-bottom: 4px;
+  padding-bottom: 2.8px;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+  padding-right: 40px;
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: grabbing;
+}
+
+select:focus {
+  outline: none;
+  border: 1px solid #e4e4e7;
+}
+
+.general .button {
+  width: 130px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  font-size: 0.875rem;
+  height: 38px;
+  padding-left: 16px;
+  padding-right: 16px;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: 1px solid #e4e4e7;
+  background-color: #fff;
+  color: #020817;
+  padding-bottom: 2.8px;
+  text-decoration: none;
+}
+
+.general .button.secondary {
+  background-color: #f4f4f5;
+  color: #18181b;
+  margin-right: 3px;
+}
+
+.general .button.secondary:hover {
+  background-color: #f4f4f5;
+}

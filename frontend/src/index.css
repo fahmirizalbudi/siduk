@@ -1,0 +1,147 @@
+:root {
+  --border-color: #e5e7eb;
+  --hover-color: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --accent-color: #f97316;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans";
+}
+
+@keyframes tes {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  width: 100%;
+  overflow-y: auto;
+}
+
+main {
+  width: calc(100% - 270px);
+  padding: 30px 60px;
+  margin-top: 70px;
+  margin-left: 270px;
+  transition: all 0.4s ease;
+  /* animation: tes 1.25s ease; */
+}
+
+.main-section {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 28px 40px;
+  }
+}
+
+.loader {
+  width: 60px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side, #000 90%, #0000);
+  background: var(--_g) 0% 50%, var(--_g) 50% 50%, var(--_g) 100% 50%;
+  background-size: calc(100% / 3) 50%;
+  animation: l3 1s infinite linear;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes l3 {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50%;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50%;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0%;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100%;
+  }
+}
+
+.NotFound {
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cetak-penduduk {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  padding-block: 1.75rem;
+  flex-direction: column;
+}
+
+.cetak-penduduk {
+  padding: 20px;
+  margin: 0;
+}
+
+.cetak-penduduk h2 {
+  text-align: center;
+  font-size: 18pt;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  page-break-inside: auto;
+}
+
+.table thead {
+  background-color: #f0f0f0;
+}
+
+.table th,
+.table td {
+  border: 1px solid #000;
+  padding: 8px 10px;
+  font-size: 11pt;
+  word-break: break-word;
+}
+
+.table {
+  table-layout: fixed;
+}
+
+.table th {
+  font-weight: 500;
+}

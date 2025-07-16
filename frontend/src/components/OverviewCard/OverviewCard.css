@@ -1,0 +1,45 @@
+.overview-card {
+  display: flex;
+  flex-basis: 20%;
+  min-height: 124px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 28px;
+  column-gap: 24px;
+  flex-grow: 1;
+}
+
+.overview-icon {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  row-gap: 10px;
+  padding: 11px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.overview-content {
+  display: flex;
+  flex-direction: column;
+  width: 156px;
+  height: 100%;
+  row-gap: 4px;
+}
+
+.content-value {
+  font-size: 30px;
+  line-height: 40px;
+  width: 100%;
+  font-weight: 500;
+}
+
+.content-label {
+  width: 100%;
+  font-size: 17px;
+  line-height: 24px;
+  opacity: 50%;
+  font-weight: 500;
+}

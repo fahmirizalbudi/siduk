@@ -1,0 +1,132 @@
+.table-container {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  overflow: hidden;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-container tr {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table-container tr:last-child {
+  border-bottom: none;
+}
+
+.table-container th {
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+  background-color: rgba(0, 0, 0, 0.01);
+}
+
+.table-container th,
+.table-container td {
+  padding: 19px 24px;
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.number-cell {
+  width: 60px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.table-container td.action-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.edit,
+.delete {
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .table-container {
+    background-color: transparent;
+    border: none;
+  }
+
+  .table-container table {
+    display: block;
+  }
+
+  .table-container thead {
+    display: none;
+  }
+
+  .table-container tbody,
+  .table-container tr,
+  .table-container td {
+    display: block;
+    width: 100%;
+  }
+
+  .table-container tr {
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .table-container tr:last-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  .table-container td {
+    position: relative;
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .table-container td:last-child {
+    padding: 0.8rem;
+    border-bottom: none;
+  }
+
+  .table-container td.number-cell {
+    width: 100%;
+    text-align: right;
+  }
+
+  .table-container td.action-group {
+    justify-content: end;
+  }
+
+  .table-container td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    width: 45%;
+    text-align: left;
+    font-weight: 500;
+    color: #000;
+  }
+}
+
+.txt-nik {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  transition: all 0.1s linear;
+}
+
+.txt-nik:hover {
+  font-size: 15.7px;
+  font-weight: bolder;
+  text-decoration: underline;
+}

@@ -1,0 +1,124 @@
+#toast-container {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 6;
+}
+
+.toast {
+    min-width: 320px;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08),
+                0 2px 8px rgba(0, 0, 0, 0.04);
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    animation: slideIn 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    transition: all 0.2s ease-out;
+}
+
+.toast.removing {
+    animation: slideOut 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.toast.success {
+    border-left: 4px solid #10B981;
+}
+
+.toast.error {
+    border-left: 4px solid #EF4444;
+}
+
+.toast.loading {
+    border-left: 4px solid #3B82F6;
+}
+
+.toast-icon {
+    font-size: 18px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toast.success .toast-icon {
+    color: #10B981;
+}
+
+.toast.error .toast-icon {
+    color: #EF4444;
+}
+
+.toast.loading .toast-icon {
+    color: #3B82F6;
+    animation: spin 1s linear infinite;
+}
+
+.toast-content {
+    flex: 1;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #1F2937;
+    font-weight: 500;
+}
+
+.toast-close {
+    background: none;
+    border: none;
+    padding: 8px;
+    margin: -8px;
+    cursor: pointer;
+    color: #9CA3AF;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+}
+
+.toast-close:hover {
+    opacity: 1;
+    color: #4B5563;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.toast-close i {
+    font-size: 14px;
+    display: block;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%) translateY(15%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,31 @@
+<svg
+  className="logo-siPedu"
+  width="50"
+  height="50"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="75 75 50 50"
+  fill="none"
+>
+  <rect
+    x="75"
+    y="75"
+    width="50"
+    height="50"
+    rx="10"
+    ry="10"
+    fill="#018c79"
+  />
+  <path
+    d="M100 80 C110 90 110 110 100 120 C90 110 90 90 100 80 Z"
+    fill="#ffffff"
+  />
+  <line
+    x1="97"
+    y1="85"
+    x2="103"
+    y2="115"
+    stroke="#018c79"
+    stroke-width="1.5"
+    stroke-linecap="round"
+  />
+</svg>
