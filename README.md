@@ -10,15 +10,17 @@
 ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 
-<br />
-
-![SIDUK](https://github.com/fahmirizalbudi/siduk/blob/main/siduk.png)
-
 </div>
+
+<br />
 
 ## 📂 SIDUK
 
 Siduk is a application that designed for managing population or resident data <i>(Sistem Informasi Kependudukan)</i>. Built with Laravel as the backend and React for a dynamic user interface, this project aims to provide a fast and efficient way to handle structured data using MySQL. Key features include:
+
+## 🖼️ Preview
+
+![SIDUK](https://github.com/fahmirizalbudi/siduk/blob/main/siduk.png)
 
 ## ✨ Features
 
