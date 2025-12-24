@@ -1,86 +1,95 @@
- 
-# SIDUK – Sistem Informasi Kependudukan
+<div align="center">
+<a href="https://github.com/fahmirizalbudi/siduk" target="blank">
+<img src="https://raw.githubusercontent.com/fahmirizalbudi/siduk/87edb861b685b928c67c78d97b7582c322c31bd5/frontend/public/logo.svg" width="280" alt="Logo" />
+</a>
 
-**SIDUK** adalah aplikasi berbasis web untuk mengelola data kependudukan secara digital. Aplikasi ini dibangun menggunakan arsitektur *frontend-backend* terpisah.
+<br />
+<br />
+
+![](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
+
+<br />
 
 ![SIDUK](https://github.com/fahmirizalbudi/siduk/blob/main/siduk.png)
 
----
+</div>
 
-## ✨ Fitur Utama
+## 📂 SIDUK
 
-- ✅ Manajemen data penduduk (CRUD)
-- 🏠 Data Kartu Keluarga & Anggota
-- 📍 Informasi wilayah (provinsi, kabupaten, dll)
-- 🔐 Autentikasi dan otorisasi pengguna
-- ➕ & More
+Siduk is a application that designed for managing population or resident data <i>(Sistem Informasi Kependudukan)</i>. Built with Laravel as the backend and React for a dynamic user interface, this project aims to provide a fast and efficient way to handle structured data using MySQL. Key features include:
 
----
+## ✨ Features
 
-## 🛠️ Teknologi yang Digunakan
+- **📊 Dashboard:** User-friendly dashboard to manage links.
+- **🔐 Authentication:** Secure login and registration system.
+- **👥 Resident Management:** Create, read, update, and delete resident data easily.
+- **🔍 Search & Filter:** Efficient querying of data based on specific criteria.
 
-### Backend (`/backend`)
-- PHP 8.x
-- Laravel 11+
-- MySQL
-- Sanctum 
-- Faker & Seeder
+## 👩‍💻 Tech Stack
 
-### Frontend (`/frontend`)
-- React (JavaScript)
+- **Laravel**: A PHP web application framework with expressive, elegant syntax for backend logic and API.
+- **React**: A JavaScript library for building user interfaces and single-page components.
+- **MySQL**: An open-source relational database management system.
 
----
+## 📦 Getting Started
 
-## 🚀 Instalasi & Setup
+To get a local copy of this project up and running, follow these steps.
 
-### 🔧 Persiapan
+### 🚀 Prerequisites
 
-1. Pastikan sudah menginstal:
-   - PHP 8.1+
-   - Composer
-   - Node.js & npm (opsional untuk frontend build)
-   - MySQL/MariaDB
+- **PHP** (v8.2 or higher) & **Composer**.
+- **Node.js** & **NPM**.
+- **MySQL** (or another supported SQL database).
 
-### 📥 Clone Repositori
+## 🛠️ Installation
 
-```bash
-git clone https://github.com/fahmirizalbudi/siduk.git
-cd siduk/backend
-```
+1. **Clone the repository:**
 
-### ⚙️ Backend Setup
+   ```bash
+   git clone https://github.com/fahmirizalbudi/siduk.git
+   cd siduk
+   ```
 
-```bash
-cp .env.example .env
-composer install
-php artisan key:generate
-php artisan migrate --seed
-php artisan serve
-```
+2. **Install dependencies:**
 
-### 🌐 Frontend Setup
+   ```bash
+   #frontend
+   cd frontend
+   npm install
 
-Jika frontend terpisah (misalnya dengan Vite):
+   #backend
+   cd backend
+   composer install
+   cp .env .env.example
+   php artisan key:generate
+   ```
 
-```bash
-cd ../frontend
-npm install
-npm run dev
-```
+3. **Run migration:**
 
----
+   ```bash
+   php artisan migrate
+   ```
 
-## 🧪 API Endpoint (Contoh)
+4. **Start the development server:**
 
-| Method | Endpoint            | Deskripsi             |
-|--------|---------------------|------------------------|
-| GET    | `/api/penduduk`     | List semua penduduk   |
-| POST   | `/api/penduduk`     | Tambah penduduk       |
-| PUT    | `/api/penduduk/{id}`| Update data penduduk  |
-| DELETE | `/api/penduduk/{id}`| Hapus data penduduk   |
+   ```bash
+   #client
+   npm run dev
 
-Gunakan Postman atau cURL untuk uji API.
+   #server
+   php artisan serve
+   ```
 
----
+## 📖 Usage
 
-> Dibuat dengan ❤️ oleh [@fahmirizalbudi](https://github.com/fahmirizalbudi)
+### ✔ Running the Website
+
+> Use [http://localhost:8000](http://localhost:8000) to test the api in your Postman.
+
+> Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
+
+## 📜 License
+
+All rights reserved. This project is for educational purposes only and cannot be used or distributed without permission.
