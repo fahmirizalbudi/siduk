@@ -14,38 +14,38 @@
 
 <br />
 
-## 📂 SIDUK
+## SIDUK
 
 Siduk is a application that designed for managing population or resident data <i>(Sistem Informasi Kependudukan)</i>. Built with Laravel as the backend and React for a dynamic user interface, this project aims to provide a fast and efficient way to handle structured data using MySQL. Key features include:
 
-## 🖼️ Preview
+## Preview
 
 ![SIDUK](https://github.com/fahmirizalbudi/siduk/blob/main/siduk.png)
 
-## ✨ Features
+## Features
 
-- **📊 Dashboard:** User-friendly dashboard to manage links.
-- **🔐 Authentication:** Secure login and registration system.
-- **👥 Resident Management:** Create, read, update, and delete resident data easily.
-- **🔍 Search & Filter:** Efficient querying of data based on specific criteria.
+- **Dashboard:** User-friendly dashboard to manage links.
+- **Authentication:** Secure login and registration system.
+- **Resident Management:** Create, read, update, and delete resident data easily.
+- **Search & Filter:** Efficient querying of data based on specific criteria.
 
-## 👩‍💻 Tech Stack
+## Tech Stack
 
 - **Laravel**: A PHP web application framework with expressive, elegant syntax for backend logic and API.
 - **React**: A JavaScript library for building user interfaces and single-page components.
 - **MySQL**: An open-source relational database management system.
 
-## 📦 Getting Started
+## Getting Started
 
 To get a local copy of this project up and running, follow these steps.
 
-### 🚀 Prerequisites
+### Prerequisites
 
 - **PHP** (v8.2 or higher) & **Composer**.
 - **Node.js** & **NPM**.
 - **MySQL** (or another supported SQL database).
 
-## 🛠️ Installation
+## Installation
 
 1. **Clone the repository:**
 
@@ -84,14 +84,14 @@ To get a local copy of this project up and running, follow these steps.
    php artisan serve
    ```
 
-## 📖 Usage
+## Usage
 
-### ✔ Running the Website
+### Running the Website
 
 > Use [http://localhost:8000](http://localhost:8000) to test the api in your Postman.
 
 > Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-## 📜 License
+## License
 
 All rights reserved. This project is for educational purposes only and cannot be used or distributed without permission.
